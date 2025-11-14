@@ -87,8 +87,7 @@ div.content {
     cursor: pointer;
     border: none;
     transition: transform 0.25s ease;
-    top: 100px;
-    left: 250px;
+    justify-content: space-between;
 }
 
 .optimus:hover {
@@ -105,10 +104,6 @@ div.content {
     box-shadow: 0 0 0 3px rgba(0, 183, 255, 0.4);
 }
 
-.bumblebee {
-    left: 600px;
-}
-
 .bumblebee:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(255, 252, 127, 0.3);
@@ -121,10 +116,6 @@ div.content {
 
 .bumblebee:focus-visible {
     box-shadow: 0 0 0 3px rgba(255, 252, 127, 0.4);
-}
-
-.ironhide {
-    left: 1000px;
 }
 
 .ironhide:hover {
@@ -195,7 +186,7 @@ div.content {
 .cardfooter {
     margin: 0;
     color: #fff;
-    font-size: 60px;
+    font-size: 55px;
     text-align: center;
     font-weight: 700;
     line-height: 1.1;
@@ -205,3 +196,14 @@ div.content {
     -webkit-user-select: none;
     pointer-events: none;
 }
+
+.autobot-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 450px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+
