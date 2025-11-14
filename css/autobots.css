@@ -180,6 +180,7 @@ div.content {
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
     z-index: 2;
+    font-style: italic;
 }
 
 
@@ -207,3 +208,63 @@ div.content {
 }
 
 
+.opinfo, .binfo, .ihinfo {
+    width: 452px;
+    height: 489px;
+    background-color: rgba(0, 0, 0, 0.28);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    position: absolute;
+    bottom: 100px;
+    left: 425px;
+}
+
+.opinfo h3 {
+    text-align: center;
+    font-size: 32px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.binfo h3 {
+    text-align: center;
+    font-size: 32px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.ihinfo h3 {
+    text-align: center;
+    font-size: 32px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.opinfo2, .binfo2, .ihinfo2 {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.13);
+    display: flex;
+}
+
+.optext, .btext, .ihtext {
+    margin: auto;
+    width: 75%;
+    font-size: 55px;
+}
+
+.binfo {
+    left: 1150px
+}
+
+.btext {
+    font-size: 38px;
+}
+
+.ihinfo {
+    left: 1900px;
+}
+
+.ihtext {
+
+}
