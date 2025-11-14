@@ -73,3 +73,135 @@ div.content {
         float: none;
     }
 }
+
+
+.optimus, .bumblebee, .ironhide {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #2b2e34;
+    display: inline-block;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border: none;
+    transition: transform 0.25s ease;
+    top: 100px;
+    left: 250px;
+}
+
+.optimus:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 183, 255, 0.3);
+}
+
+.optimus:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 15px rgba(0, 183, 255, 0.25);
+}
+
+.optimus:focus-visible {
+    box-shadow: 0 0 0 3px rgba(0, 183, 255, 0.4);
+}
+
+.bumblebee {
+    left: 600px;
+}
+
+.bumblebee:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(255, 252, 127, 0.3);
+}
+
+.bumblebee:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 15px rgba(255, 252, 127, 0.25);
+}
+
+.bumblebee:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255, 252, 127, 0.4);
+}
+
+.ironhide {
+    left: 1000px;
+}
+
+.ironhide:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(108, 122, 137, 0.3);
+}
+
+.ironhide:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 15px rgba(108, 122, 137, 0.25);
+}
+
+.ironhide:focus-visible {
+    box-shadow: 0 0 0 3px rgba(108, 122, 137, 0.4);
+}
+
+.cardimage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center top;
+    transform: scale(0.9);
+    z-index: 0;
+    transition: transform 0.35s ease, filter 0.35s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+}
+
+.optimus:hover .cardimage {
+    transform: scale(0.95);
+    filter: brightness(85%);
+}
+
+.bumblebee:hover .cardimage {
+    transform: scale(0.95);
+    filter: brightness(85%);
+}
+
+/* Frosted footer overlay */
+.titlecard {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 0.18),
+            rgba(255, 255, 255, 0.06)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    z-index: 2;
+}
+
+
+.cardfooter {
+    margin: 0;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+}
