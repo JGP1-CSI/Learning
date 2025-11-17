@@ -37,3 +37,8 @@ label {
 #ch:checked ~ label {
     display: none;
 }
+
+.page:visited {
+    text-decoration: none;
+    color: blue;
+}

@@ -137,3 +137,12 @@ div.content {
   width: 75%;
   font-size: 28px;
 }
+
+.test:visited {
+  text-decoration: none;
+  color: orange;
+}
+
+.test {
+  padding: 20px
+}
