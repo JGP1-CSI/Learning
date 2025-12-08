@@ -1,8 +1,5 @@
-.page-title {
-    text-align: center;
-    margin: 10px;
-    font-size: 68px;
-    color: #FFFFFF;
+body {
+    background-color: #33353A;
 }
 
 .page-header {
@@ -12,37 +9,26 @@
     color: #FFFFFF;
 }
 
-body {
-    background-color: #33353A;
+.page {
+    margin: 10px;
+    text-align: center;
+    font-size: 64px;
+    color: white;
 }
 
-/* The side navigation menu */
-.sidebar {
-  margin-top: -7px;
-  padding: 0;
-  width: 200px;
-  background-color: #33353A;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  outline-color: #FFFFFF;
-  outline-style: solid;
-  border-radius: 0px 25px 25px 0px;
-}
-
-/* Sidebar links */
-.sidebar a {
-  display: block;
+.page a {
+  float: left;
   color: white;
-  padding: 16px;
+  text-align: center;
+  padding: 22px;
   text-decoration: none;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-size: 24px;
 }
 
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-background: rgba(255, 255, 255, 0.2);
+.main a:hover:not(.active) {
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
