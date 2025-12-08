@@ -22,6 +22,43 @@
 
 <div class="content">
 
+    <div class="autobot-container">
+
+        <button class="optimus" onclick="myFunction()" id="myBtn">
+            <img src="images/optimus.png" alt="Optimus Prime" class="cardimage">
+
+            <div class="titlecard">
+                <p class="cardfooter">Optimus Prime</p>
+            </div>
+
+        </button>
+
+        <div class="opinfo" id="more">
+            <h3>Optimus Prime</h3>
+            <p id="dots"></p>
+            <div class="opinfo2">
+                <p class="optext">Optimus Prime is a courages leader of the Autobots, he fights for freedom and for peace. </p>
+            </div>
+        </div>
+
+    </div>
+<script>
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
 </div>
 
 </body>

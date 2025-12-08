@@ -34,3 +34,137 @@ div.content {
   padding: 1px 16px;
   height: 1000px;
 }
+
+#more {display: none;}
+
+.optimus {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #2b2e34;
+    display: inline-block;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border: none;
+    transition: transform 0.25s ease;
+    justify-content: space-between;
+}
+
+.optimus:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 183, 255, 0.3);
+}
+
+.optimus:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 15px rgba(0, 183, 255, 0.25);
+}
+
+.optimus:focus-visible {
+    box-shadow: 0 0 0 3px rgba(0, 183, 255, 0.4);
+}
+
+
+.cardimage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center top;
+    transform: scale(0.9);
+    z-index: 0;
+    transition: transform 0.35s ease, filter 0.35s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+}
+
+.optimus:hover .cardimage {
+    transform: scale(0.95);
+    filter: brightness(85%);
+}
+/* Frosted footer overlay */
+.titlecard {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 0.18),
+            rgba(255, 255, 255, 0.06)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    z-index: 2;
+    font-style: italic;
+}
+
+
+.cardfooter {
+    margin: 0;
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+}
+
+.autobot-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 400px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+
+.opinfo {
+    width: 400px;
+    height: 575px;
+    background-color: rgba(0, 0, 0, 0.28);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    position: absolute;
+    bottom: -300px;
+    right: 650px;
+}
+
+.opinfo h3 {
+    text-align: center;
+    font-size: 32px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.opinfo2{
+    height: 87.3%;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.13);
+    display: flex;
+}
+
+.optext{
+    margin: auto;
+    width: 75%;
+    font-size: 55px;
+}
