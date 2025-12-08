@@ -1,44 +1,36 @@
 body {
-    background-color: lime;
-    display: flex;
-    justify-content: center;
-    padding-top: 200px;
+    background-color: #33353A;
 }
 
-.test {
-    background-color: white;
-    width: 400px;
-    padding: 22px 30px;
-    border-radius: 5px;
-}
-
-#ch {
-    display: none;
-}
-
-label {
-    display: inline-block;
-    cursor: pointer;
+.page {
+    margin: 10px;
+    text-align: center;
+    font-size: 64px;
     color: white;
-    background-color: forestgreen;
-    padding: 3px 13px;
-    border: 3px;
-    margin-top: 12px;
 }
 
-.content {
-    display: none;
+.page a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-size: 24px;
 }
 
-#ch:checked ~ .content {
-    display: block;
+.main a:hover:not(.active) {
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#ch:checked ~ label {
-    display: none;
-}
-
-.page:visited {
-    text-decoration: none;
-    color: blue;
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
