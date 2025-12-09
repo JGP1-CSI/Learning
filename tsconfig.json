@@ -24,6 +24,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "allowImportingTsExtensions": true,
 
     /* === Path aliases (what you already had) === */
     "baseUrl": ".",
