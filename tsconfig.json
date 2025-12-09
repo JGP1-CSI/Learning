@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* === Core JS/TS settings === */
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+
+    /* === React / JSX === */
+    "jsx": "react-jsx",             // <-- This fixes TS17004
+
+    /* === Strictness & safety (you can loosen if needed) === */
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* === Module interop / handy options === */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* === Path aliases (what you already had) === */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+
+  /* What files TS should type-check */
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
