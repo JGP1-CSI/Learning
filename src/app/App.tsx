@@ -1,15 +1,18 @@
 import {
-    Card
+    Card,
+    CardTitle,
+    CardFooter
 } from '../components/ui/card.tsx';
 
 
-const App = () => {
+const Optimus = () => {
     return (
-        <Card>
-            Hello, Wikiformers!
+        <Card className='p-[50]'>
+            <CardTitle></CardTitle>
+            <CardFooter>Optimus Prime</CardFooter>
         </Card>
     )
 }
 
 
-export default App;
+export default Optimus;
