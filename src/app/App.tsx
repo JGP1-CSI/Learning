@@ -6,7 +6,7 @@ import {
 const App = () => {
     return (
         <Card>
-            Hello, Wikiformers!
+            Version Control Code Test!
         </Card>
     )
 }
